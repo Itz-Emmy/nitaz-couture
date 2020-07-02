@@ -1,0 +1,352 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 7rem;
+  margin-left: -9rem;
+}
+header {
+  width: 100%;
+}
+header .container {
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* max-height: 10rem; */
+  margin: 0;
+  width: 100%;
+}
+.header-right {
+  padding: 34px 0 0 0;
+  
+}
+.header-right a {
+  padding: 20px 1rem;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.header-right a:hover {
+  color: red;
+}
+
+.mySlides {
+  display: none;
+  height: 100vh;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  height: 90vh;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade img {
+  width: 100%;
+  max-height: 90vh;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.parallax1 {
+  background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763372/Nitaz%20Couture/81346780_2589975011092558_5964795481247604848_n_jamell.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax2 {
+  background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763368/Nitaz%20Couture/61735059_390849901533906_7738719069111285223_n_ja9wqj.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.form-container {
+  padding-top: 25px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590761511/Nitaz%20Couture/IMG-20200320-WA0002_nufjvh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  font-size: 1.2rem;
+  margin: 0;
+  background-color: #fff;
+
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.form h3 {
+  margin-top: -25px;
+  padding: 35px 0 10px 15px;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #0e0d13;
+}
+iframe {
+  display: flex;
+  margin-left: 57vw;
+}
+fieldset {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px 0 10px 15px;
+
+  color: #0e0d13;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem 0 10px 0;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+input {
+  margin-left: 1rem;
+  width: 18rem;
+}
+
+#firstname,
+#lastname {
+  margin-left: 82px;
+}
+
+#date {
+  margin-left: 72px;
+}
+#state {
+  margin-left: 23px;
+}
+
+#country {
+  margin-left: 102px;
+  position: relative;
+  display: inline-block;
+}
+#address {
+  margin-left: 98px;
+  width: 20rem;
+}
+
+#phone {
+  margin-left: 52px;
+}
+.container-course,
+.schedule {
+  display: flex;
+  margin-bottom: 10px;
+}
+#checkbox {
+  margin-left: 87px;
+}
+#checkbox label {
+  display: inline;
+}
+/* input:invalid:active {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+} */
+#checkbox input {
+  width: 13px;
+}
+#radio {
+  margin-left: 35px;
+}
+#radio label {
+  display: inline;
+}
+#radio input {
+  width: 13px;
+}
+
+button {
+  padding: 10px;
+  font-weight: 900;
+  margin-left: 2rem;
+  border-radius: 25px;
+}
+button:hover {
+  background-color: #f2ce71;
+}
+legend {
+  margin-left: 10px;
+}
+#duration {
+  margin-left: 98px;
+}
+#email {
+  margin-left: 112px;
+}
+
+.sect {
+  margin: 0 0 25px 15px;
+  min-height: 20rem;
+}
+
+.sep {
+  margin: 25px 0 25px 15px;
+}
+.sep h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 2rem;
+  position: relative;
+}
+.sep h2 span {
+  position: relative;
+}
+.sep h2 span:after {
+  position: absolute;
+  top: 49%;
+  left: -80px;
+  bottom: 0;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #ffc300;
+}
+.sep h2 span:before {
+  position: absolute;
+  top: 49%;
+  right: -80px;
+  bottom: 0;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #ffc300;
+}
+
+.testimonies {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.customer img {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ffc300;
+}
+.customer {
+  padding: 30px;
+}
+.customer p {
+  padding-top: 15px;
+  text-align: justify;
+}
+
+#footer {
+  text-align: center;
+  border-top: 2px solid red;
+  background-color: antiquewhite;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  text-align: justify;
+}
+.footer-div h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.about,
+.contact-info,
+.news,
+.information,
+.customer-care {
+  width: 20%;
+  padding: 25px 15px 70px 15px;
+}
+.designer {
+  background-color: cornsilk;
+  margin: 0;
+  padding: 10px;
+}
+
+#error-message {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 0;
+  background-color: #fe8b8e;
+  text-align: center;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
