@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Instructions
 
@@ -10,4 +9,4 @@ lorem ipsum dolor sit
 
 This project is my first attempt at building a professional website.
 
-> > > > > > > 31ca479a3a224b0e6f6701d8330ec1ea01af7e79
+
