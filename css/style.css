@@ -16,7 +16,7 @@ body {
   height: 100%;
 }
 
-header-left .logo {
+.header-left .logo {
   width: 7rem;
   margin-left: 0;
 }
