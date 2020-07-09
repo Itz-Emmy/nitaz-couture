@@ -1,17 +1,12 @@
 //Menu bar function
 function myFunction() {
   var x = document.getElementById("nav-bar");
-  var y = document.getElementById("blank");
+
   if (x.style.display === "none") {
     x.style.display = "block";
-    y.style.height = "18.5rem";
   } else {
     x.style.display = "none";
-    y.style.height = "4.5rem";
   }
-  document.getElementById("blank").addEventListener("click", function () {
-    x.style.display = "none";
-  });
 }
 
 //Get the button
