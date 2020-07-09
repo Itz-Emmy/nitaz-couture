@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -50,7 +52,7 @@ header a.icon {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   right: 5px;
   z-index: 99;
   border: none;
@@ -77,10 +79,6 @@ img {
   position: relative;
   width: 100%;
   padding: 5px 0 0 0;
-}
-
-.active {
-  background-color: #717171;
 }
 .fade img {
   width: 100vw;
@@ -117,6 +115,43 @@ img {
   .text {
     font-size: 11px;
   }
+}
+
+.welcome-header {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  color: #c00002;
+  font-family: "Leckerli One", "Berkshire Swash", cursive;
+  padding: 10px 0 20px 0;
+}
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+.intro-text1 {
+  padding-bottom: 15px;
+  text-align: justify;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.sub-intro {
+  margin: 0 10px;
+  font-size: 16px;
+}
+.sub-intro h3 {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+
+  font-family: "Leckerli One", "Berkshire Swash", cursive;
+}
+.sub-intro h3 span {
+  color: #c00002;
+}
+.CEO {
+  width: 50vw;
+  border-radius: 15px;
 }
 
 .parallax1 {
@@ -267,7 +302,7 @@ legend {
 }
 
 .sect {
-  min-height: 20rem;
+  margin: 10px 10px;
 }
 
 .sep {
@@ -308,7 +343,6 @@ legend {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
 }
 .customer img {
   width: 100%;
@@ -344,9 +378,7 @@ legend {
 
 .about,
 .contact-info,
-.news,
-.information,
-.customer-care {
+.news {
   padding: 25px 15px 70px 15px;
 }
 .designer {
