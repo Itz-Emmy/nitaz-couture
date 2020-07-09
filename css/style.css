@@ -11,44 +11,66 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 100%;
 }
 
-.header-left .logo {
-  width: 7rem;
-  margin-left: 0;
-}
-header {
-  width: 100%;
-}
-header .container {
-  padding-top: 0;
-  display: flex;
-  flex-direction: row;
+#header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
   margin: 0;
-  width: 100%;
+  padding: 0;
+  border: 1px solid chocolate;
+  overflow: hidden;
 }
-.header-right {
-  padding: 34px 0 0 0;
+#header img {
+  height: 70px;
+  margin-left: 10px;
 }
-.header-right a {
-  padding: 20px 1rem;
-  margin: 0;
+.fa-bars {
+  color: #c00002;
+}
+header a.icon {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+#nav-bar {
+  display: none;
+}
+#nav-bar a {
+  color: rgb(13, 0, 0);
+  padding: 10px 10px;
   text-decoration: none;
-  color: black;
-  font-size: 1rem;
+  font-size: 17px;
+  display: block;
   text-align: center;
 }
-
-.header-right a:hover {
-  color: red;
+#blank {
+  height: 4.5rem;
 }
-
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #cb7a44;
+  cursor: pointer;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+.fa-angle-up {
+  font-size: 55px;
+  color: white;
+  font-weight: bold;
+}
 .mySlides {
   display: none;
-  height: 100vh;
 }
 img {
   vertical-align: middle;
@@ -56,18 +78,17 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
   position: relative;
-  margin: auto;
-  height: 100vh;
+  margin: 0;
+  width: 100%;
 }
 
 .active {
   background-color: #717171;
 }
 .fade img {
-  width: 100%;
-  max-height: 90vh;
+  width: 100vw;
+  height: 50vh;
 }
 /* Fading animation */
 .fade {
@@ -104,7 +125,8 @@ img {
 
 .parallax1 {
   background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763372/Nitaz%20Couture/81346780_2589975011092558_5964795481247604848_n_jamell.jpg");
-  height: 70vh;
+  height: 50vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -112,7 +134,8 @@ img {
 
 .parallax2 {
   background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763368/Nitaz%20Couture/61735059_390849901533906_7738719069111285223_n_ja9wqj.jpg");
-  height: 70vh;
+  height: 50vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -131,7 +154,6 @@ img {
   font-size: 1.2rem;
   margin: 0;
   background-color: #fff;
-
   padding-right: 2rem;
   padding-bottom: 0.5rem;
 }
@@ -145,7 +167,6 @@ img {
 }
 iframe {
   display: flex;
-  margin-left: 57vw;
 }
 fieldset {
   border: 1px solid black;
@@ -250,7 +271,6 @@ legend {
 }
 
 .sect {
-  margin: 0 0 25px 15px;
   min-height: 20rem;
 }
 
@@ -261,7 +281,7 @@ legend {
   text-transform: uppercase;
   text-align: center;
   padding-top: 25px;
-  font-size: 2rem;
+  font-size: 1rem;
   position: relative;
 }
 .sep h2 span {
@@ -270,26 +290,27 @@ legend {
 .sep h2 span:after {
   position: absolute;
   top: 49%;
-  left: -80px;
+  left: -40px;
   bottom: 0;
   content: "";
-  width: 60px;
+  width: 30px;
   height: 2px;
   background: #ffc300;
 }
 .sep h2 span:before {
   position: absolute;
   top: 49%;
-  right: -80px;
+  right: -40px;
   bottom: 0;
   content: "";
-  width: 60px;
+  width: 30px;
   height: 2px;
   background: #ffc300;
 }
 
 .testimonies {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
 }
@@ -314,7 +335,8 @@ legend {
 
 .footer-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100vw;
   font-size: 1rem;
   text-align: justify;
 }
@@ -329,7 +351,6 @@ legend {
 .news,
 .information,
 .customer-care {
-  width: 20%;
   padding: 25px 15px 70px 15px;
 }
 .designer {
@@ -347,3 +368,20 @@ legend {
   font-size: 15px;
   transition: all 0.5s ease;
 }
+/* @media only screen and (min-width: 300px) {
+ header .container {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+} 
+.fade img {
+  height: 60vw;
+}
+
+header #nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+} */

@@ -19,30 +19,49 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <a href="index.html">
-            <img
-              class="logo"
-              src="https://res.cloudinary.com/dulxyugan/image/upload/v1590754613/Nitaz%20Couture/logo_e6t3sm.png"
-            />
-          </a>
-        </div>
-        <div class="header-right">
-          <a href="#top">Home</a>
-          <a href="#">About</a>
-          <a href="#">Gallery</a>
-          <a href="#">Order</a>
-          <a href="#">Contact Us</a>
-          <a href="#form-container">Enroll for Training</a>
-          <span class="mobile-menu"></span>
-        </div>
-      </div>
-    </header>
+    <header id="header">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="https://res.cloudinary.com/dulxyugan/image/upload/v1590754613/Nitaz%20Couture/logo_e6t3sm.png"
+          alt="Nitaz Couture Logo"
+        />
+      </a>
 
+      <nav id="nav-bar">
+        <a href="#top" class="nav-link" id="nav-link" onclick="myFunction()"
+          >Home</a
+        >
+        <a href="#" class="nav-link" id="nav-link" onclick="myFunction()"
+          >About</a
+        >
+        <a href="#" class="nav-link" id="nav-link" onclick="myFunction()"
+          >Gallery</a
+        >
+        <a href="#" class="nav-link" id="nav-link" onclick="myFunction()"
+          >Contact Us</a
+        >
+        <a href="#" class="nav-link" id="nav-link" onclick="myFunction()"
+          >Order</a
+        >
+        <a
+          href="#form-container"
+          class="nav-link"
+          id="nav-link"
+          onclick="myFunction()"
+          >Enroll for Training</a
+        >
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <span class="fa fa-3x fa-bars"></span>
+      </a>
+    </header>
+    <div id="blank"></div>
     <main>
-      <div class="slideshow-container">
+      <button onclick="topFunction()" id="myBtn" title="Back to top">
+        <span class="fa fa-angle-up"></span>
+      </button>
+      <div id="hero" class="slideshow-container">
         <div class="mySlides fade">
           <img
             src="https://res.cloudinary.com/dulxyugan/image/upload/c_scale,h_730,w_1920/v1590763372/Nitaz%20Couture/79637896_624883158278704_8285819946678886645_n_ghvdwh.jpg"
@@ -113,7 +132,7 @@
           ullam, voluptas, in doloremque voluptatum consequuntur cupiditate
           soluta quos possimus repellat ipsum neque?
         </p>
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6634352161545!2d5.623821714266015!3d6.307872527383694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3e9f340f6cd%3A0x5b8292ea86983c09!2s6%20JBS%20Estate%20Rd%2C%20Oka%2C%20Benin%20City!5e0!3m2!1sen!2sng!4v1593121370593!5m2!1sen!2sng"
           width="400"
           height="300"
@@ -122,10 +141,10 @@
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
-        ></iframe>
+        ></iframe> -->
       </div>
     </main>
-    <div class="form-container">
+    <!-- <div class="form-container">
       <div id="form-container">
         <section id="form">
           <form
@@ -522,7 +541,7 @@
           </form>
         </section>
       </div>
-    </div>
+    </div> -->
 
     <div class="sep">
       <h2><span>What our Customers say </span></h2>

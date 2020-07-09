@@ -1,3 +1,41 @@
+//Menu bar function
+function myFunction() {
+  var x = document.getElementById("nav-bar");
+  var y = document.getElementById("blank");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.height = "18.5rem";
+  } else {
+    x.style.display = "none";
+    y.style.height = "4.5rem";
+  }
+  document.getElementById("blank").addEventListener("click", function () {
+    x.style.display = "none";
+  });
+}
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//Hero slideshow
 var slideIndex = 0;
 showSlides();
 
@@ -19,7 +57,7 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-
+//form validation
 let firstName = document.getElementById("firstname");
 let lastName = document.getElementById("lastname");
 let dateOfBirth = document.getElementById("date");
