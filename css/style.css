@@ -83,7 +83,6 @@ img {
 .fade img {
   width: 100vw;
   height: 50vh;
-  height: calc(var(50vh, 1vh) * 100);
 }
 /* Fading animation */
 .fade {
@@ -159,25 +158,19 @@ img {
 .parallax1 {
   background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763372/Nitaz%20Couture/81346780_2589975011092558_5964795481247604848_n_jamell.jpg");
   height: 50vh;
-  height: calc(var(50vh, 1vh) * 100);
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
 }
 
 .parallax2 {
   background-image: url("https://res.cloudinary.com/dulxyugan/image/upload/v1590763368/Nitaz%20Couture/61735059_390849901533906_7738719069111285223_n_ja9wqj.jpg");
   height: 50vh;
-  height: calc(var(50vh, 1vh) * 100);
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
 }
 .form-container {
   padding-top: 25px;
