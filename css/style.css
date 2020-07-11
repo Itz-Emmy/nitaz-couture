@@ -162,6 +162,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
 }
 
 .parallax2 {
@@ -171,6 +173,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
 }
 .form-container {
   padding-top: 25px;
